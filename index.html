@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 8th English PEC App</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1e40af">
+</head>
+<body>
+<header>
+  <h1>📚 Class 8th English</h1>
+  <button id="installBtn" style="display:none;">Install</button>
+</header>
+
+<main class="container">
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="syllabus">Syllabus</button>
+    <button class="tab-btn" data-tab="notes">Notes</button>
+    <button class="tab-btn" data-tab="quiz">Quiz</button>
+    <button class="tab-btn" data-tab="paper">Paper Pattern</button>
+    <button class="tab-btn" data-tab="classroom">Live Class</button>
+  </nav>
+
+  <section id="syllabus" class="tab-content active">
+    <h2>English Book A - All Topics</h2>
+    <ul id="topicsList"></ul>
+    <h2>Book B - Writing Section</h2>
+    <ul>
+      <li>Applications: Leave, Fee Concession, Character Certificate</li>
+      <li>Letters: To Friend, To Father, Complaint</li>
+      <li>Stories: The Thirsty Crow, Honesty is the Best Policy</li>
+      <li>Essays: My School, Science, Corruption</li>
+      <li>Comprehension: Unseen Passages</li>
+    </ul>
+  </section>
+
+  <section id="notes" class="tab-content">
+    <h2>Notes & MCQs</h2>
+    <select id="topicSelect"></select>
+    <div id="noteContent">Select a topic to view notes.</div>
+  </section>
+
+  <section id="quiz" class="tab-content">
+    <h2>🧠 MCQ Quiz</h2>
+    <div id="quizBox">
+      <button id="startQuizBtn">Start New Quiz</button>
+    </div>
+    <div id="resultBox" class="hidden">
+      <h3>Your Score: <span id="score"></span> / <span id="total"></span></h3>
+      <button id="retryBtn">Retry</button>
+    </div>
+  </section>
+
+  <section id="paper" class="tab-content">
+    <h2>PEC Paper Pattern - Class 8th</h2>
+    <table>
+      <tr><th>Part</th><th>Question Type</th><th>Marks</th></tr>
+      <tr><td>Part-A</td><td>MCQs from Book A</td><td>15</td></tr>
+      <tr><td>Part-B</td><td>Q/A, Translation, Poem</td><td>25</td></tr>
+      <tr><td>Part-C</td><td>Essay, Letter, Application, Story, Comp.</td><td>40</td></tr>
+      <tr><td>Total</td><td></td><td>80</td></tr>
+    </table>
+  </section>
+
+  <section id="classroom" class="tab-content">
+    <h2>🎙️ Live Voice Class</h2>
+    <p>Teacher & Students 1 Click me milen.</p>
+    <a href="https://meet.jit.si/Class8thEnglishSillanwali" target="_blank" class="join-btn">Join Live Class Room</a>
+    <p><small>Note: Mic/Camera Permission allow karein.</small></p>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
